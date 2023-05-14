@@ -1,25 +1,25 @@
 #include "shell.h"
 
 /**
- *@execve: Execmd command
- *argv: argument command
+ *execmd - Execmd command
+ *@argv: arguments array of commands
  *
- * */
+ */
 
 
 void execmd(char **argv)
 {
-char *command = NULL;
+	char *command = NULL;
 
-if (argv)
-{
-	/* get the command */
-command = argv[0];
+	if (argv)
+	{
+		/* get the command */
+		command = argv[0];
 
-	/*execute the command with execve */
-if (execve(command, argv, NULL) == -1)
-{
-perror("Error:");
-};
-}
+		/*execute the command with execve */
+		if (execve(command, argv, NULL) == -1)
+		{
+			perror("Error:");
+		}
+	}
 }
