@@ -50,4 +50,7 @@ void handle_ctrl_c(int opr UNUSED);
 int main(int argc, char *argv[], char *env[]);
 
 void execmd(char **argv);
+
+int execute(data_of_program *data);
+
 #endif
