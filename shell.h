@@ -53,4 +53,10 @@ void execmd(char **argv);
 
 int execute(data_of_program *data);
 
+int _myexit(info_t *info);
+
+int _mycd(info_t *info);
+
+int _myhelp(info_t *info);
+
 #endif
