@@ -59,4 +59,14 @@ int _mycd(info_t *info);
 
 int _myhelp(info_t *info);
 
+int _myhistory(info_t *info);
+
+int unset_alias(info_t *info, char *str);
+
+int set_alias(info_t *info, char *str);
+
+int print_alias(list_t *node);
+
+int _myalias(info_t *info);
+
 #endif
