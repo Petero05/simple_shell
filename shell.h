@@ -215,4 +215,10 @@ char *convert_number(long int, int, int);
 
 void remove_comments(char *);
 
+char *_strncpy(char *, char *, int);
+
+char *_strncat(char *, char *, int);
+
+char *_strchr(char *, char);
+
 #endif
