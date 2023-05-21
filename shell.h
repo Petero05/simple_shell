@@ -205,4 +205,14 @@ int _putfd(char c, int fd);
 
 int _putsfd(char *str, int fd);
 
+int _erratoi(char *);
+
+void print_error(info_t *, char *);
+
+int print_d(int, int);
+
+char *convert_number(long int, int, int);
+
+void remove_comments(char *);
+
 #endif
