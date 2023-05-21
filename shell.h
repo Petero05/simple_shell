@@ -191,4 +191,10 @@ int build_history_list(info_t *info, char *buf, int linecount);
 
 int renumber_history(info_t *info);
 
+void clear_info(info_t *);
+
+void set_info(info_t, char *);
+
+void free_info(info_t *, int);
+
 #endif
