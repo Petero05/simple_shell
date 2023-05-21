@@ -197,4 +197,12 @@ void set_info(info_t, char *);
 
 void free_info(info_t *, int);
 
+void _eputs(char *);
+
+int _eputchar(char);
+
+int _putfd(char c, int fd);
+
+int _putsfd(char *str, int fd);
+
 #endif
