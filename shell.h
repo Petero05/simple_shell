@@ -221,4 +221,6 @@ char *_strncat(char *, char *, int);
 
 char *_strchr(char *, char);
 
+int bfree(void **);
+
 #endif
