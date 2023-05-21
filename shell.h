@@ -158,5 +158,13 @@ int print_alias(list_t *node);
 int _myalias(info_t *info);
 
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j);
+
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream);
+
+char **get_environ(info_t *);
+
+int _unsetenv(info_t *, char *);
+
+int _setenv(info_t *, char *, char *);
+
 #endif
