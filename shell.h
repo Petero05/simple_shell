@@ -229,4 +229,24 @@ void ffree(char **);
 
 void *_realloc(void *, unsigned int, unsigned int);
 
+int is_cmd(info_t *, char *);
+
+char *dup_chars(char *, int, int);
+
+char *find_path(info_t *, char *, char *);
+
+char **strtow(char *, char *);
+
+char **strtow2(char *, char);
+
+int is_chain(info_t *, char *, size_t *);
+
+void check_chain(info_t *, char *, size_t *, size_t, size_t);
+
+int replace_alias(info_t *);
+
+int replace_vars(info_t *);
+
+int replace_string(char **, char *);
+
 #endif
