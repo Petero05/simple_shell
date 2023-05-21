@@ -223,4 +223,10 @@ char *_strchr(char *, char);
 
 int bfree(void **);
 
+char *_memset(char *, char, unsigned int);
+
+void ffree(char **);
+
+void *_realloc(void *, unsigned int, unsigned int);
+
 #endif
