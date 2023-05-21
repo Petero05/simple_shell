@@ -98,6 +98,18 @@ typedef struct passinfo
 	int histcount;
 } info_t;
 
+/**
+ * struct info - struct for the info
+ * @program_name: the associated function to be called for program name
+ *@input_line: the input line
+ *@command_name: command name
+ *@exec_counter: counting execution
+ *@file_descriptor: file des
+ *@tokens: tokes
+ *@env: envirnoment
+ *@alias_list: aliasl list
+ */
+
 typedef struct info
 {
 	char *program_name;
@@ -116,7 +128,7 @@ typedef struct info
 
 /**
  * struct builtins - struct for the builtins
- * @builtin: the name of the builtin
+ * @builtins: the name of the builtin
  * @function: the associated function to be called for each builtin
  */
 typedef struct builtins
@@ -167,7 +179,7 @@ int _unsetenv(info_t *, char *);
 
 int _setenv(info_t *, char *, char *);
 
-/* history file --- history.c */
+/* history file -- history.c */
 
 char *get_history_file(info_t *info);
 
