@@ -18,6 +18,35 @@ char **get_environ(info_t *info)
 }
 
 /**
+ * _getenv - Get an environment variable
+ * @info: pointer to env array
+ * @var: variable being searched
+ *
+ * Return - env variable
+ */
+
+char *_getenv(info_t *info, char *var)
+{
+	list_t *node = info->env;
+	char *p;
+
+	if (!node || !var)
+		return (NULL);
+
+	while (node)
+	{
+		p = starts_with(node->str, var);
+		if (p && *p == '=')
+		{
+			return(node->str);
+		}
+		node = node->next;
+	}
+	return(NULL);
+	
+}
+
+/**
  * _unsetenv - Remove an environment variable
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.

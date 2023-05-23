@@ -12,6 +12,7 @@
 #include <sys/stat.h> /* for use of stat function */
 #include <signal.h> /* for signal management */
 #include <fcntl.h> /* for open files*/
+#include <limits.h>
 #include "macro.h" /* for msg help and prompt */
 
 
@@ -174,6 +175,8 @@ void bring_line(char **lineptr, size_t *n, char *buffer, size_t j);
 ssize_t get_line(char **lineptr, size_t *n, FILE *stream);
 
 char **get_environ(info_t *);
+
+char *_getenv(info_t *, char *);
 
 int _unsetenv(info_t *, char *);
 
