@@ -13,8 +13,8 @@
 #include <errno.h>
 
 #define INFO_INIT \
-{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-        0, 0, 0}
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, \
+	NULL, 0, 0}
 
 /* for read/write buffers */
 #define READ_BUF_SIZE 1024
