@@ -10,6 +10,8 @@
 /* buffer size for each read call in _getline */
 #define BUFFER_SIZE 1024
 
+#define INFO_INIT { .readfd = 0 }
+
 /************* FORMATTED STRING FOR HELP BUILT IN **************/
 
 #define HELP_CD_MSG "cd=\n"\
