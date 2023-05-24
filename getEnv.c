@@ -22,7 +22,7 @@ char **get_environ(info_t *info)
  * @info: pointer to env array
  * @var: variable being searched
  *
- * Return - env variable
+ * Return: env variable
  */
 
 char *_getenv(info_t *info, char *var)
@@ -38,12 +38,11 @@ char *_getenv(info_t *info, char *var)
 		p = starts_with(node->str, var);
 		if (p && *p == '=')
 		{
-			return(node->str);
+			return (node->str);
 		}
 		node = node->next;
 	}
-	return(NULL);
-	
+	return (NULL);
 }
 
 /**
