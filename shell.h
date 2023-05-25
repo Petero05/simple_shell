@@ -154,6 +154,7 @@ int _myhelp(info_t *);
 int _myhistory(info_t *);
 int _myalias(info_t *);
 ssize_t get_input(info_t *);
+ssize_t input_buf(info_t *, char **, size_t *);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 void clear_info(info_t *);
